@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Places I've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Places I've Been</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          <form>
+            <h3>Enter in the places you have been!</h3>
+            <div class="form-group">
+              <label>Location</label>
+              <input class="form-control" type="text" placeholder="Location" id="location-input">
+            </div>
+            <div class="form-group">
+              <label>Landmark</label>
+              <input class="form-control" type="text" placeholder="Landmark" id="landmark-input">
+            </div>
+            <div class="form-group">
+              <label>Date you last visided</label>
+              <input class="form-control" type="text" placeholder="time" id="time-input">
+            </div>
+            <div class="form-group">
+              <label>Discription</label>
+               <textarea class="form-control" id="discription-input" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark btn-lg btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" id="output-list">
+          <h2>Places</h2>
+          <ol>
+          </ol>
+        </div>
+        <div class="col-md-6" id="output-card">
+          <div class="card">
+            <div class="card-header">
+              <span class="place-output"></span>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="landmark-output"></span></li>
+              <li class="list-group-item"><span class="time-output"></span></li>
+              <li class="list-group-item"><span class="discription-output"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

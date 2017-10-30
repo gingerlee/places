@@ -1,0 +1,15 @@
+.card {
+  width: 20rem;
+}
+
+#output-card {
+  display: none;
+}
+
+#output-list {
+  display: none;
+}
+.place:hover {
+  color: blue;
+  text-decoration: underline;
+}
